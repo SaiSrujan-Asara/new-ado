@@ -6,6 +6,7 @@ pool:
 steps:
   - script: |
       echo "1"
+      echo "hostname" echo "ip addr"
   - bash: |
       echo "2"
   - script: 
