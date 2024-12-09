@@ -4,5 +4,11 @@ pool:
   name: default
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+  - script: |
+      echo "1"
+  - bash: |
+      echo "2"
+  - script: 
+      echo "1.1"
+  - bash: 
+      echo "2.2"
