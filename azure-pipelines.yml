@@ -4,13 +4,14 @@ pool:
  name: ado
 
 jobs:
-  - job: 
+  - job: j1
     displayName: Test1
     steps:
       - script: |
-          hostname
-  - job: 
+          terraform init
+  - job: j2
     displayName: Test2
+    dependsOn: j1
     steps:
         - script: |
-            ip addr
+            terraform plan
