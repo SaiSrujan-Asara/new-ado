@@ -16,4 +16,4 @@ jobs:
       - script: |
           terraform plan
       - script: |
-          terraform appy -auto-approve
+          terraform apply -auto-approve
