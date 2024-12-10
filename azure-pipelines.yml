@@ -15,9 +15,5 @@ jobs:
           terraform validate
       - script: |
           terraform plan
-#   - job: j2
-#     displayName: Test2
-#     dependsOn: j1
-#     steps:
-#         - script: |
-#             terraform plan
+      - script: |
+          terraform appy -auto-approve
