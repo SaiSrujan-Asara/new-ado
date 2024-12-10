@@ -1,15 +1,16 @@
 trigger: none
 
 pool:
-  name: default
+ name: ado
 
-steps:
-  - script: |
-      echo "1"
-      echo "hostname" echo "ip addr"
-  - bash: |
-      echo "2"
-  - script: 
-      echo "1.1"
-  - bash: 
-      echo "2.2"
+jobs:
+  - job: 
+    displayName: Test1
+    steps:
+      - script: |
+          hostname
+  - job: 
+    displayName: Test2
+    steps:
+        - script: |
+            ip addr
